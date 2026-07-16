@@ -36,6 +36,30 @@
     .card h3 { font-size: 18px; color: #0E1B2E; margin-bottom: 8px; }
     .card p { color: #6B7280; font-size: 15px; line-height: 1.6; }
 
+    /* Showcase */
+    .showcase { background: #F5F7FA; padding: 80px 24px; }
+    .showcase h2 { text-align: center; font-size: 32px; color: #0E1B2E; margin-bottom: 12px; }
+    .showcase .sub { text-align: center; color: #6B7280; font-size: 18px; margin-bottom: 56px; }
+    .showcase-row {
+      display: flex; align-items: center; gap: 56px; max-width: 980px; margin: 0 auto 96px;
+    }
+    .showcase-row:last-child { margin-bottom: 0; }
+    .showcase-row.reverse { flex-direction: row-reverse; }
+    .showcase-img { flex: 0 0 auto; width: 260px; text-align: center; }
+    .showcase-img img { width: 100%; height: auto; display: block; filter: drop-shadow(0 20px 40px rgba(14,27,46,0.25)); }
+    .showcase-text { flex: 1 1 auto; }
+    .showcase-text .eyebrow { color: #1B6FE0; font-weight: 700; font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px; }
+    .showcase-text h3 { color: #0E1B2E; font-size: 26px; margin-bottom: 14px; }
+    .showcase-text p { color: #6B7280; font-size: 16px; line-height: 1.7; margin-bottom: 16px; }
+    .showcase-text ul { list-style: none; }
+    .showcase-text li { color: #374151; font-size: 15px; line-height: 1.9; padding-left: 24px; position: relative; }
+    .showcase-text li::before { content: "✓"; color: #1B6FE0; font-weight: 700; position: absolute; left: 0; }
+    @media (max-width: 720px) {
+      .showcase-row, .showcase-row.reverse { flex-direction: column; gap: 28px; text-align: center; }
+      .showcase-img { width: 220px; }
+      .showcase-text li { text-align: left; }
+    }
+
     /* About */
     .about { background: #0E1B2E; padding: 80px 24px; text-align: center; }
     .about h2 { font-size: 32px; margin-bottom: 16px; }
@@ -105,6 +129,55 @@
         <div class="card-icon">🆘</div>
         <h3>Resources & Crisis Support</h3>
         <p>Quick access to crisis hotlines, meeting finders, recovery resources, and facility announcements.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase -->
+  <section class="showcase">
+    <h2>Take a Look Inside</h2>
+    <p class="sub">A private, distraction-free space designed around the daily habits that support recovery.</p>
+
+    <div class="showcase-row">
+      <div class="showcase-img"><img src="screenshot-home.jpg" alt="Wolfe Anchor home dashboard screenshot" /></div>
+      <div class="showcase-text">
+        <div class="eyebrow">Home Dashboard</div>
+        <h3>Everything that matters, the moment you open the app</h3>
+        <p>The home screen greets members by name and puts their progress front and center, so checking in only takes a glance.</p>
+        <ul>
+          <li>Live clean time counter with sobriety start date</li>
+          <li>One-tap access to the private Journal</li>
+          <li>Upcoming facility events — meetings, Zoom sessions, and gatherings</li>
+          <li>A daily quote for encouragement</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="showcase-row reverse">
+      <div class="showcase-img"><img src="screenshot-progress.jpg" alt="Wolfe Anchor clean time and badges screenshot" /></div>
+      <div class="showcase-text">
+        <div class="eyebrow">Progress & Milestones</div>
+        <h3>Every day counts, and every milestone gets celebrated</h3>
+        <p>A dedicated progress screen breaks clean time down into months, weeks, and days, and rewards consistency with collectible badges.</p>
+        <ul>
+          <li>Badges for 30, 60, and 90 days, 6 months, 1 year, and beyond</li>
+          <li>Editable start date for members restarting or updating their journey</li>
+          <li>Share Milestone posts progress straight to the community feed</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="showcase-row">
+      <div class="showcase-img"><img src="screenshot-resources.jpg" alt="Wolfe Anchor resource center screenshot" /></div>
+      <div class="showcase-text">
+        <div class="eyebrow">Resource Center</div>
+        <h3>Help is never more than a tap away</h3>
+        <p>A curated resource center keeps national support lines and recovery literature accessible at any hour, for any member who needs them.</p>
+        <ul>
+          <li>SAMHSA National Helpline and Find Treatment locator</li>
+          <li>Crisis Text Line and National Drug Helpline</li>
+          <li>AA Big Book, SMART Recovery, and Recovery Research Institute resources</li>
+        </ul>
       </div>
     </div>
   </section>
